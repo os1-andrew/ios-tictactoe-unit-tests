@@ -89,5 +89,5 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
         didSet {
             boardViewController.board = board
         }
-    }
+    } 
 }
