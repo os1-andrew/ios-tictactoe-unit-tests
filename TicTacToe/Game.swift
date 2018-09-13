@@ -10,10 +10,16 @@ import Foundation
 
 struct Game {
     
+    init() {
+        self.board = GameBoard()
+        self.activePlayer = GameBoard.Mark.x
+        self.gameIsOver = false
+        self.winningPlayer = nil
+    }
     mutating func restart(){
         board = GameBoard()
         
-        gameIsOver = true
+        gameIsOver = false
         activePlayer = .x
         winningPlayer = nil
     }
