@@ -34,7 +34,7 @@ struct Game {
             activePlayer = nil
             gameIsOver = true
         } else if board.isFull {
-            winningPlayer = activePlayer
+            winningPlayer = nil
             activePlayer = nil
             gameIsOver = true
         } else {
